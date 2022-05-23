@@ -1,0 +1,116 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source /home/xzhoubu/Xilinx/Vitis_HLS/2020.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/home/xzhoubu/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'xzhoubu' on host 'ecelvd319.ece.local' (Linux_x86_64 version 5.4.0-109-generic) on Mon May 23 15:34:35 HKT 2022
+INFO: [HLS 200-10] On os Ubuntu 20.04.4 LTS
+INFO: [HLS 200-10] In directory '/home/xzhoubu/Desktop/MICS6000A/project3/HLS_checker/dut/design'
+Sourcing Tcl script 'script.tcl'
+INFO: [HLS 200-1510] Running: open_project -reset top_dut 
+INFO: [HLS 200-10] Creating and opening project '/home/xzhoubu/Desktop/MICS6000A/project3/HLS_checker/dut/design/top_dut'.
+INFO: [HLS 200-1510] Running: set_top top 
+INFO: [HLS 200-1510] Running: add_files top.c 
+INFO: [HLS 200-10] Adding design file 'top.c' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Creating and opening solution '/home/xzhoubu/Desktop/MICS6000A/project3/HLS_checker/dut/design/top_dut/solution1'.
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xcu50-fsvh2104-2-e 
+INFO: [HLS 200-10] Setting target device to 'xcu50-fsvh2104-2-e'
+INFO: [HLS 200-1510] Running: create_clock -period 3.33 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.33ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 189.705 MB.
+INFO: [HLS 200-10] Analyzing design file 'top.c' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.53 seconds. CPU system time: 0.27 seconds. Elapsed time: 0.39 seconds; current allocated memory: 190.291 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.22 seconds. CPU system time: 0.33 seconds. Elapsed time: 3.51 seconds; current allocated memory: 190.617 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 190.635 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 191.586 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 191.034 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 211.056 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 202.688 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 202.879 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 202.962 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/a' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/b' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'top' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.01 seconds; current allocated memory: 203.115 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.52 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.56 seconds; current allocated memory: 209.229 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for top.
+INFO: [VLOG 209-307] Generating Verilog RTL for top.
+INFO: [HLS 200-789] **** Estimated Fmax: 1136.36 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 4.4 seconds. CPU system time: 0.66 seconds. Elapsed time: 4.61 seconds; current allocated memory: 209.385 MB.
+INFO: [HLS 200-112] Total CPU user time: 6.84 seconds. Total CPU system time: 1.19 seconds. Total elapsed time: 6.48 seconds; peak allocated memory: 211.056 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Mon May 23 15:34:42 2022...
+HW-CBMC version 5.2
+Parsing ./dut/verification/c_vlg_link.c
+Parsing ./dut/verification/top.v
+Converting
+Type-checking Verilog::top
+Type-checking c_vlg_link
+Mapping variables
+mapping `top.ap_start' to `Verilog::top.ap_start'
+mapping `top.ap_done' to `Verilog::top.ap_done'
+mapping `top.ap_idle' to `Verilog::top.ap_idle'
+mapping `top.ap_ready' to `Verilog::top.ap_ready'
+mapping `top.a' to `Verilog::top.a'
+mapping `top.b' to `Verilog::top.b'
+mapping `top.ap_return' to `Verilog::top.ap_return'
+mapping `top.ap_ce_reg' to `Verilog::top.ap_ce_reg'
+Generating GOTO Program
+Adding CPROVER library
+Function Pointer Removal
+Partial Inlining
+Generic Property Instrumentation
+Starting Bounded Model Checking
+Unwinding loop main.0 iteration 1 file ./dut/verification/c_vlg_link.c line 29 function main thread 0
+Unwinding loop main.0 iteration 2 file ./dut/verification/c_vlg_link.c line 29 function main thread 0
+Unwinding loop main.0 iteration 3 file ./dut/verification/c_vlg_link.c line 29 function main thread 0
+Unwinding loop main.0 iteration 4 file ./dut/verification/c_vlg_link.c line 29 function main thread 0
+Unwinding loop main.0 iteration 5 file ./dut/verification/c_vlg_link.c line 29 function main thread 0
+size of program expression: 303 steps
+simple slicing removed 4 assignments
+Generated 3 VCC(s), 3 remaining after simplification
+Passing problem to propositional reduction
+Unwinding transition system Verilog::top with 6 time frames
+General constraints
+Initial state
+Transition relation
+Unwinding transition system done
+converting SSA
+converting constraints
+Running propositional reduction
+Post-processing
+Solving with MiniSAT 2.2.0 with simplifier
+4243 variables, 10958 clauses
+SAT checker: negated claim is UNSATISFIABLE, i.e., holds
+Runtime decision procedure: 0.016s
+VERIFICATION SUCCESSFUL
+HLS checker version 1.0
+create project
+design path  = ./benchmark/test_adder/
+project name = top_dut
+top name     = top
